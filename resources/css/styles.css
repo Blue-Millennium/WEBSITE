@@ -9,14 +9,6 @@ html, body {
     align-items: center;
 }
 
-/* 禁用选取 */
-body {
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard syntax */
-}
-
 /* 背景图片样式 */
 img {
     position: absolute;
@@ -76,4 +68,11 @@ img {
     padding: 0 25px;
     text-decoration: none; /* 去除链接的下划线 */
     color: inherit; /* 继承父元素的颜色 */
+}
+
+.title{
+    color: aqua!important;
+    font-size: 2rem;
+    margin: 2rem;
+    height: 9rem;
 }
