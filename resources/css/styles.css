@@ -1,16 +1,14 @@
-/* 全局样式 */
-html, body {
+
+/* 背景图片样式 */
+img {
     margin: 0;
     padding: 0;
-    height: 100%;
+
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* 背景图片样式 */
-img {
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -22,6 +20,9 @@ img {
 
 /* 自定义按钮样式 */
 .custom-button {
+    margin: 0;
+    padding: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,4 +76,18 @@ img {
     font-size: 2rem;
     margin: 2rem;
     height: 9rem;
+}
+
+/* 我拉的世 */
+.rgn {
+    position: relative; /* 使 .rgn 容器成为定位元素 */
+    padding: 10px; /* 添加内边距 */
+    max-width: 100%; /* 确保容器的最大宽度为100% */
+}
+.title {
+    color: aqua;
+    font-size: 2rem;
+    margin: 2rem;
+    position: relative; /* 使 .title 成为定位元素 */
+    z-index: 1; /* 控制文本显示的层级 */
 }
