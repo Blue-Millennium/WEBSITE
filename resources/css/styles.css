@@ -67,7 +67,6 @@ img {
     position: relative;
     padding: 0 25px;
     text-decoration: none; /* 去除链接的下划线 */
-    color: inherit; /* 继承父元素的颜色 */
 }
 
 /* 标题样式 */
