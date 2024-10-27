@@ -1,0 +1,71 @@
+/* 全局样式 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 背景图片样式 */
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+}
+
+/* 自定义按钮样式 */
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 2px solid gray;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none; /* 去除链接的下划线 */
+}
+
+/* 自定义按钮的伪元素样式 */
+.custom-button::before, .custom-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* 左半圆的位置 */
+.custom-button::before {
+    left: -2px;
+}
+
+/* 右半圆的位置 */
+.custom-button::after {
+    right: -2px;
+}
+
+/* 按钮内的文本样式 */
+.custom-button a {
+    font-size: 18px;
+    color: black;
+    z-index: 1;
+    position: relative;
+    padding: 0 25px;
+    text-decoration: none; /* 去除链接的下划线 */
+    color: inherit; /* 继承父元素的颜色 */
+}
