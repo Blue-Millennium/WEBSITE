@@ -71,9 +71,8 @@ img {
 
 /* 标题样式 */
 .title {
-    color: aqua;
     font-size: 2rem;
-    margin: 2rem;
+    margin: 5rem;
     position: relative; /* 使 .title 成为定位元素 */
     z-index: 1; /* 控制文本显示的层级 */
 }
@@ -84,4 +83,12 @@ img {
     padding: 10px; /* 添加内边距 */
     max-width: 100%; /* 确保容器的最大宽度为100% */
     min-height: 100vh; /* 确保容器高度至少为视口高度 */
+}
+
+.text-blue{
+    color: cyan;
+}
+
+.text-black{
+    color: black;
 }
