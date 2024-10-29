@@ -2,9 +2,8 @@
 img {
     margin: 0;
     padding: 0;
-
     overflow: hidden;
-    display: block; /* 修改为 block 确保图片占据整个容器 */
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -18,7 +17,6 @@ img {
 .custom-button {
     margin: 0;
     padding: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,14 +25,14 @@ img {
     background-color: rgba(255, 255, 255, 0.75);
     border: 2px solid gray;
     border-radius: 25px;
-    position: absolute; /* 使用绝对定位 */
-    top: 50%; /* 垂直居中 */
-    left: 50%; /* 水平居中 */
-    transform: translate(-50%, -50%); /* 精确居中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     cursor: pointer;
     overflow: hidden;
-    text-decoration: none; /* 去除链接的下划线 */
+    text-decoration: none;
 }
 
 /* 自定义按钮的伪元素样式 */
@@ -66,33 +64,41 @@ img {
     z-index: 1;
     position: relative;
     padding: 0 25px;
-    text-decoration: none; /* 去除链接的下划线 */
+    text-decoration: none;
 }
 
 /* 标题样式 */
 .title {
     font-size: 2rem;
     margin: 5rem;
-    position: relative; /* 使 .title 成为定位元素 */
-    z-index: 1; /* 控制文本显示的层级 */
+    position: relative;
+    z-index: 1;
 }
 
 /* 容器样式 */
 .rgn {
-    position: relative; /* 使 .rgn 容器成为定位元素 */
-    padding: 10px; /* 添加内边距 */
-    max-width: 100%; /* 确保容器的最大宽度为100% */
-    min-height: 100vh; /* 确保容器高度至少为视口高度 */
+    position: relative;
+    padding: 10px;
+    max-width: 100%;
+    min-height: 100vh;
 }
 
-.text-blue{
+.text-blue {
     color: cyan;
 }
 
-.text-black{
+/* 容器样式 */
+.page-1-rgn {
+    position: relative;
+    padding: 10px;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.text-black {
     color: black;
 }
 
-.text-white{
+.text-white {
     color: white;
 }
