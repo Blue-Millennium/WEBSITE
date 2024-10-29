@@ -8,8 +8,10 @@
 /* 全局样式 */
 main {
     margin-top: 50px;
-    flex: 1; /* 使 main 占据剩余空间 */
-    margin-bottom: 4rem; /* 添加底部间距，留出两行空白 */
+    flex: 1;
+    /* 使 main 占据剩余空间 */
+    margin-bottom: 4rem;
+    /* 添加底部间距，留出两行空白 */
 }
 
 body {
@@ -52,13 +54,25 @@ main {
 .team-member img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin-bottom: 1rem;
 }
 
 .team-member h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+}
+
+.fab {
+    color: rgb(0, 96, 192)
+}
+
+.icon-blue {
+    color: rgb(0, 96, 192)
+}
+
+.icon-white {
+    color: white
 }
 
 /* 页脚样式 */
