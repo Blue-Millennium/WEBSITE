@@ -8,6 +8,8 @@
 /* 全局样式 */
 main {
     margin-top: 50px;
+    flex: 1; /* 使 main 占据剩余空间 */
+    margin-bottom: 4rem; /* 添加底部间距，留出两行空白 */
 }
 
 body {

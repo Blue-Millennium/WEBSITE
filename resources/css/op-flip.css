@@ -1,0 +1,81 @@
+/* 分页按钮样式 */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#pagination button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagination button i {
+    font-size: 1.2rem;
+}
+
+#pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* 团队成员容器样式 */
+#team-members-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#team-members-container .team-member {
+    flex: 1 1 calc(25% - 1rem); /* 每行4个成员 */
+    max-width: calc(25% - 1rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 10%; /* 1:1 的宽高比 */
+    overflow: hidden;
+}
+
+#team-members-container .team-member .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+}
+
+.team-member p {
+    margin: 0.5rem 0;
+}
+
+.team-member .social-icons a {
+    margin: 0 0.5rem;
+}
