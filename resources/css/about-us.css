@@ -10,8 +10,6 @@ main {
     margin-top: 50px;
     flex: 1;
     /* 使 main 占据剩余空间 */
-    margin-bottom: 4rem;
-    /* 添加底部间距，留出两行空白 */
 }
 
 body {
@@ -73,15 +71,4 @@ main {
 
 .icon-white {
     color: white
-}
-
-/* 页脚样式 */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
