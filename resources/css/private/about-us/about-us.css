@@ -24,6 +24,10 @@ main {
     padding: 2rem;
 }
 
+.content {
+    font-size: 1.5em;
+}
+
 .hero {
     text-align: center;
     margin-bottom: 2rem;
@@ -34,14 +38,11 @@ main {
     margin-bottom: 1rem;
 }
 
-.content {
-    margin-bottom: 2rem;
-}
-
 .team {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    font-size: 1.8em;
 }
 
 .team-member {
@@ -71,4 +72,17 @@ main {
 
 .icon-white {
     color: white
+}
+
+/* 标题样式 */
+.title {
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* 偷偷告诉你的格式 */
+.secret {
+    font-size: 0.2em;
+    text-decoration: line-through;
 }
