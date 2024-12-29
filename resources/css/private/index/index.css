@@ -90,16 +90,16 @@ body {
     min-height: 100vh;
 }
 
-.text-blue {
-    color: rgb(0, 127, 255)
-}
-
 /* 容器样式 */
 .page-1-rgn {
     position: relative;
     padding: 10px;
     max-width: 100%;
     min-height: 100vh;
+}
+
+.text-blue {
+    color: rgb(0, 127, 255)
 }
 
 .text-black {

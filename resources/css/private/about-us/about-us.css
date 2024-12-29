@@ -9,7 +9,7 @@
 main {
     margin-top: 50px;
     flex: 1;
-    /* 使 main 占据剩余空间 */
+    padding: 2rem;
 }
 
 body {
@@ -19,10 +19,6 @@ body {
     color: #333;
 }
 
-/* 主体样式 */
-main {
-    padding: 2rem;
-}
 
 .content {
     font-size: 1.5em;
@@ -81,7 +77,7 @@ main {
     z-index: 1;
 }
 
-/* 偷偷告诉你的格式 */
+/* 偷偷告诉你格式 */
 .secret {
     font-size: 0.2em;
     text-decoration: line-through;
