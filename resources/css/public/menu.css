@@ -1,24 +1,24 @@
-/* 头部样式 */
 header {
-    background: rgba(255, 255, 255, 0.5);
-    color: #fff;
-    /* 调整 header 的高度以匹配菜单高度 */
-    height: 50px; /* 根据实际需要调整高度 */
-    display: flex;
-    z-index: 1;
-    align-items: center; /* 垂直居中对齐 */
-    position: fixed; /* 将 header 固定在顶部 */
-    top: 0; /* 从顶部开始定位 */
-    left: 0; /* 从左侧开始定位 */
-    width: 100%; /* 宽度为 100%，确保覆盖整个屏幕宽度 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 确保足够高 */
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001; /* 确保高于 header */
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    height: 100%; /* 使菜单项高度与 header 一致 */
-    align-items: center; /* 垂直居中对齐 */
+    height: 100%;
+    align-items: center;
 }
 
 header nav ul li {
@@ -29,20 +29,11 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    line-height: 50px; /* 使链接文本垂直居中 */
+    line-height: 50px;
 }
 
 header nav ul li a:hover {
     text-decoration: underline;
-}
-
-.menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0;
-    z-index: 1000; /* 确保菜单在其他内容之上 */
 }
 
 .menu ul {
@@ -60,10 +51,90 @@ header nav ul li a:hover {
     color: black;
     text-decoration: none;
     padding: 5px 10px;
-    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    transition: background-color 0.3s ease;
 }
 
 .menu a:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* 渐进变深的背景色 */
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+/* 汉堡菜单样式 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    margin-right: 10px; /* 添加右边距 */
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9); /* 调整背景颜色 */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 80% 0; /* 添加适当的上下内边距 */
+        overflow: hidden; /* 移除滚动条 */
+        max-height: 0; /* 初始状态下隐藏 */
+        transition: max-height 0.3s ease;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        padding: 0 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    header nav ul li:first-child {
+        border-top: none;
+    }
+
+    header nav ul li a {
+        color: #000;
+        font-size: 16px; /* 调整字体大小 */
+        line-height: 1.5; /* 调整行高 */
+        padding: 10px 20px;
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    header nav ul.active {
+        display: block;
+        max-height: 100vh; /* 使用视口高度确保足够大 */
+    }
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
