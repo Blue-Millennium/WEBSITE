@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const footerContent = [
         {
             type: 'p',
-            text: '&copy; 2024 Blue-Millennium. All rights reserved.'
+            text: '© 2024 Blue-Millennium. All rights reserved.'
         },
         {
             type: 'a',
@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 a.className = item.class;
             }
             footer.appendChild(a);
-            // 添加一个空格或 &emsp; 作为分隔符
             const space = document.createTextNode('\u00A0\u00A0\u00A0\u00A0'); // 四个空格
             footer.appendChild(space);
         }
