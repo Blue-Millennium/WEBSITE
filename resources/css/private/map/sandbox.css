@@ -3,18 +3,21 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
 }
+
 header {
     height: 50px; /* 根据实际情况调整 */
     background-color: rgba(0, 196, 244, 0.5);
 }
 
-footer{
+footer {
     height: 50px; /* 根据实际情况调整 */
 }
+
 #iframe-container {
     flex: 1;
     position: relative;
