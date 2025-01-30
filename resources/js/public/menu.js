@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const navList = document.getElementById('nav-list');
+    const hamburger = document.querySelector('.hamburger');
+
+    if (!navList) {
+        console.error('navList element not found');
+        return;
+    }
 
     navItems.forEach(item => {
         const li = document.createElement('li');
@@ -23,5 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         li.appendChild(a);
         navList.appendChild(li);
+    });
+
+    // 添加汉堡菜单点击事件监听器
+    hamburger.addEventListener('click', function () {
+        navList.classList.toggle('active');
+        hamburger.classList.toggle('active');
     });
 });
