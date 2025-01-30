@@ -1,3 +1,9 @@
+/* 初始化样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* 头部样式 */
 header {
     background: rgba(255, 255, 255, 0.5);
