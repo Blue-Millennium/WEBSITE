@@ -5,6 +5,7 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
+
 header {
     height: 50px; /* 根据实际情况调整 */
     background-color: rgba(0, 196, 244, 0.5);
@@ -13,6 +14,7 @@ header {
 footer {
     height: 50px; /* 根据实际情况调整 */
 }
+
 iframe {
     width: 100%;
     height: calc(100% - 90px); /* 100% - (header height + footer height) */
