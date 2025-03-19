@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const footerContent = [
         {
             type: 'p',
-            text: '© 2024 Blue-Millennium. All rights reserved.'
+            text: '© 2024-2025 Blue-Millennium. All rights reserved.'
         },
         {
             type: 'a',
