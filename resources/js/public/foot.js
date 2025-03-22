@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             type: 'a',
-            text: 'Tunite 组织官网',
+            text: 'Tunite 官网',
             href: 'https://tunite.cn',
             target: '_blank',
             class: 'text-blue'
