@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {text: '模组服轨交线路图', href: 'map.html'},
         {
             text: '加入我们',
-            href: 'https://qm.qq.com/cgi-bin/qm/qr?k=N8TldcldaRkQXGFlXc_mTeYxqMnJ95es&jump_from=webapi&authKey=9rsk7N8LLGLdzwkoAO/qCZmPc4JaOfGbcGRfjFWgmkAdC1CbfDe7qifhu4FXtCf7',
+            href: 'https://qm.qq.com/cgi-bin/qm/qr?k=9_vS8M00KoSDvj8uVRQAYbZGFrIi_mdR&jump_from=webapi&authKey=EjtyVtpRe2zZQoxU0lJKK9BAFlb2sUNr2HfTjcm+OGDY/QSnpyiCQ9Eoan2acL7t',
             target: '_blank'
         }
     ];
@@ -36,4 +36,51 @@ document.addEventListener('DOMContentLoaded', function () {
         navList.classList.toggle('active');
         hamburger.classList.toggle('active');
     });
+
+    // 获取文字区域的背景颜色并调整菜单颜色
+    function adjustMenuColor(textColorForLightBackground, textColorForDarkBackground) {
+        const header = document.querySelector('header');
+        if (!header) {
+            console.error('header element not found');
+            return;
+        }
+        const customColor = header.getAttribute('data-text-color');
+        const menuLinks = document.querySelectorAll('header nav ul li a, .menu a');
+        const hamburgerSpans = document.querySelectorAll('.hamburger span');
+
+        if (customColor) {
+            console.log(customColor); // 检查 customColor 的值
+            // 使用自定义颜色
+            menuLinks.forEach(link => {
+                link.style.color = customColor;
+            });
+            hamburgerSpans.forEach(span => {
+                span.style.backgroundColor = customColor;
+            });
+        } else {
+            const header = document.querySelector('header');
+            const style = window.getComputedStyle(header);
+            const backgroundColor = style.backgroundColor;
+
+            // 将背景颜色从 rgba 格式转换为 rgb 格式
+            const rgba = backgroundColor.match(/\d+/g);
+            if (!rgba) return;
+
+            const r = parseInt(rgba[0], 10);
+            const g = parseInt(rgba[1], 10);
+            const b = parseInt(rgba[2], 10);
+            const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+            menuLinks.forEach(link => {
+                link.style.color = brightness > 128 ? textColorForLightBackground : textColorForDarkBackground;
+            });
+
+            // 保持汉堡菜单颜色不变
+            hamburgerSpans.forEach(span => {
+                span.style.backgroundColor = brightness > 128 ? '#000' : '#fff';
+            });
+        }
+    }
+
+    // 调用 adjustMenuColor 函数并传递参数
+    adjustMenuColor('#000', '#fff');
 });
