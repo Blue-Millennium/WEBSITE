@@ -70,8 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const g = parseInt(rgba[1], 10);
             const b = parseInt(rgba[2], 10);
             const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+            const mediaQuery = window.matchMedia('(max-width: 768px)');
+            // 否则根据亮度设置颜色
             menuLinks.forEach(link => {
-                link.style.color = brightness > 128 ? textColorForLightBackground : textColorForDarkBackground;
+                link.style.color = mediaQuery.matches ? '#000' : brightness > 128 ? textColorForLightBackground : textColorForDarkBackground;
             });
 
             // 保持汉堡菜单颜色不变
