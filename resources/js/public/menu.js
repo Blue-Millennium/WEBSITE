@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navItems = [
         {text: '首页', href: 'index.html'},
         {text: '关于我们', href: 'about-us.html'},
+        {text: '更新公告', href: 'update.html'},
         {text: '状态信息', href: 'https://stats.blue-millennium.fun', target: '_blank'},
         {text: '模组服轨交线路图', href: 'map.html'},
         {

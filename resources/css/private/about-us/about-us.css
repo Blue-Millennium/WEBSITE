@@ -82,3 +82,10 @@ body {
     font-size: 0.2em;
     text-decoration: line-through;
 }
+
+.notUseAnymore {
+    font-size: 1em;
+    color: #000;
+    background-color: #000; /* 高亮背景色 */
+    padding: 2px; /* 可选，增加内边距 */
+}
