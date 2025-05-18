@@ -1,0 +1,44 @@
+.animated-log .log-entry {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-log .log-entry:nth-child(1) { transition-delay: 0.1s; }
+.animated-log .log-entry:nth-child(2) { transition-delay: 0.2s; }
+.animated-log .log-entry:nth-child(3) { transition-delay: 0.3s; }
+/* 可以继续增加更多延迟，或者使用循环结构通过 JS 自动生成 */
+
+.animated-log .log-entry.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.log-entry {
+    background-color: #f9f9f9;
+    border-left: 5px solid #007BFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.log-entry:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.update-log h2 {
+    color: #007BFF;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}

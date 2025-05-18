@@ -8,9 +8,11 @@
     <link href="resources/css/public/menu.css" rel="stylesheet">
     <link href="resources/css/public/footer.css" rel="stylesheet">
     <link href="resources/css/private/update/update.css" rel="stylesheet">
+    <link href="resources/css/private/update/logs.css" rel="stylesheet">
     <script src="resources/js/public/some-common-functions.js"></script>
     <script src="resources/js/public/menu.js"></script>
     <script src="resources/js/public/foot.js"></script>
+    <script src="resources/js/private/update/log-loader.js"></script>
 </head>
 <body>
 <header data-text-color="#000">
@@ -24,7 +26,10 @@
         </ul>
     </nav>
 </header>
-<p>原版服务器已于5.3正式关闭，已被5.4上线的小游戏服务器代替</p>
+<div class="update-log-container">
+    <h1>更新日志</h1>
+    <div id="update-log" class="update-log animated-log"></div> <!-- 添加动画类 -->
+</div>
 <footer class="fixed" id="footer">
 </footer>
 </body>
