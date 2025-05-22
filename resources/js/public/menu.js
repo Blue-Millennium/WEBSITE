@@ -1,10 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navItems = [
-        {text: '首页', href: 'index.html'},
-        {text: '关于我们', href: 'about-us.html'},
-        {text: '更新公告', href: 'update.html'},
-        {text: '状态信息', href: 'https://stats.blue-millennium.fun', target: '_blank'},
-        {text: '模组服轨交线路图', href: 'map.html'},
+        {
+            text: '首页',
+            href: 'index.html'
+        },
+        {
+            text: '关于我们',
+            href: 'about-us.html'
+        },
+        {
+            text: '更新公告',
+            href: 'update.html'
+        },
+        {
+            text: '状态信息',
+            href: 'https://stats.blue-millennium.fun',
+            target: '_blank'
+        },
+        {
+            text: '模组服轨交线路图',
+            href: 'map.html'
+        },
         {
             text: '加入我们',
             href: 'https://qm.qq.com/cgi-bin/qm/qr?k=9_vS8M00KoSDvj8uVRQAYbZGFrIi_mdR&jump_from=webapi&authKey=EjtyVtpRe2zZQoxU0lJKK9BAFlb2sUNr2HfTjcm+OGDY/QSnpyiCQ9Eoan2acL7t',
