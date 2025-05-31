@@ -63,13 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         const customColor = header.getAttribute('data-text-color');
         const menuLinks = document.querySelectorAll('header nav ul li a, .menu a');
-        const hamburgerSpans = document.querySelectorAll('.hamburger span');
+        const hamburgerSpans = document.querySelectorAll('.hamburger span')
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
 
         if (customColor) {
             console.log(customColor); // 检查 customColor 的值
             // 使用自定义颜色
             menuLinks.forEach(link => {
-                link.style.color = customColor;
+                link.style.color = mediaQuery.matches ? '#000' : customColor;
             });
             hamburgerSpans.forEach(span => {
                 span.style.backgroundColor = customColor;
@@ -87,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const g = parseInt(rgba[1], 10);
             const b = parseInt(rgba[2], 10);
             const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-            const mediaQuery = window.matchMedia('(max-width: 768px)');
             // 否则根据亮度设置颜色
             menuLinks.forEach(link => {
                 link.style.color = mediaQuery.matches ? '#000' : brightness > 128 ? textColorForLightBackground : textColorForDarkBackground;
