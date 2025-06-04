@@ -62,9 +62,21 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
         const customColor = header.getAttribute('data-text-color');
+        const bgColor = header.getAttribute('data-bg-color');
         const menuLinks = document.querySelectorAll('header nav ul li a, .menu a');
         const hamburgerSpans = document.querySelectorAll('.hamburger span')
         const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+        if (bgColor) {
+            console.log(customColor);
+            if (bgColor === "clear") {
+                // do not do anything
+            } else {
+                header.style.backgroundColor = bgColor;
+            }
+        } else {
+            header.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+        }
 
         if (customColor) {
             console.log(customColor); // 检查 customColor 的值
@@ -102,4 +114,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 调用 adjustMenuColor 函数并传递参数
     adjustMenuColor('#000', '#fff');
+});
+
+document.addEventListener('click', function (e) {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('header nav ul');
+
+    if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+    }
 });

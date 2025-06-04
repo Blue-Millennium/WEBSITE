@@ -1,4 +1,3 @@
-/* 假设 header 和 footer 的高度分别为 50px 和 40px */
 body, html {
     margin: 0;
     padding: 0;
@@ -7,12 +6,7 @@ body, html {
 }
 
 header {
-    height: 50px; /* 根据实际情况调整 */
     background-color: rgba(0, 196, 244, 0.5);
-}
-
-footer {
-    height: 50px; /* 根据实际情况调整 */
 }
 
 iframe {

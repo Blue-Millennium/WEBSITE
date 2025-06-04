@@ -1,3 +1,7 @@
+body {
+    padding-top: 50px;
+}
+
 /* 初始化样式 */
 * {
     margin: 0;
@@ -68,6 +72,7 @@ header nav ul li a:hover {
 /* 汉堡菜单样式 */
 .hamburger {
     display: none;
+    position: fixed;
     flex-direction: column;
     justify-content: space-between;
     width: 24px;
@@ -93,18 +98,22 @@ header nav ul li a:hover {
     }
 
     header nav ul {
+        z-index: 1000;
+        list-style: none;
         display: none;
         flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 50px;
-        left: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 10px;
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 60% 0; /* 调整 padding 值 */
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3s ease;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
     }
 
     header nav ul li {

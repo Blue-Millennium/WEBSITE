@@ -1,7 +1,17 @@
 body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    height: 50px; /* 根据实际情况调整 */
+    background-color: rgba(255, 255, 255, 0.5);
 }
