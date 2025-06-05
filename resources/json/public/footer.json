@@ -1,0 +1,26 @@
+[
+    {
+        "type": "p",
+        "text": "© 2024-2025 Blue-Millennium. All rights reserved."
+    },
+    {
+        "type": "a",
+        "text": "GitHub",
+        "href": "https://github.com/Blue-Millennium",
+        "target": "_blank",
+        "className": "text-blue"
+    },
+    {
+        "type": "a",
+        "text": "Tunite 官网",
+        "href": "https://tunite.cn",
+        "target": "_blank",
+        "className": "text-blue"
+    },
+    {
+        "type": "a",
+        "text": "联系我们",
+        "href": "mailto:suisuroru@blue-millennium.fun",
+        "className": "text-blue"
+    }
+]
