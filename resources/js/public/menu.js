@@ -102,3 +102,18 @@ document.addEventListener('click', function (e) {
         menu.classList.remove('active');
     }
 });
+
+// 在现有代码的最后添加滚动检测
+document.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    const bgColor = header.getAttribute('data-bg-color');
+    
+    // 只对透明背景的页面（如首页）添加滚动效果
+    if (bgColor === 'clear') {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+});

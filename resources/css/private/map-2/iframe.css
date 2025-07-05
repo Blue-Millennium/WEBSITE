@@ -1,4 +1,4 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -11,9 +11,9 @@ header {
 
 iframe {
     width: 100%;
-    height: calc(100% - 90px); /* 100% - (header height + footer height) */
+    height: calc(100% - 100px); /* 调整总高度计算 */
     border: none;
-    position: absolute; /* 使用绝对定位 */
-    top: 50px; /* 与 header 的高度相同 */
-    bottom: 40px; /* 与 footer 的高度相同 */
+    position: absolute;
+    top: 60px; /* 修改为与导航栏高度一致 */
+    bottom: 40px; /* 保持footer高度不变 */
 }

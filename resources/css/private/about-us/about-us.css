@@ -1,4 +1,4 @@
-/* 基本重置 */
+/* 重置样式 */
 * {
     margin: 0;
     padding: 0;
@@ -6,85 +6,291 @@
 }
 
 /* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    background: #f8fafc;
+    color: #334155;
+    margin: 0;
+    padding: 0;
+    /* 为固定导航栏留出空间 */
+    padding-top: 80px;
+}
+
 main {
     flex: 1;
     padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f8fafc 0%, #e2e8f0 100%);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-
-.content {
-    font-size: 1.5em;
-}
-
+/* Hero区域 - 调整第一个hero的上边距 */
 .hero {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
 }
 
-.hero h1 {
+/* 第一个hero区域需要额外的上边距 */
+.hero:first-child {
+    margin-top: 2rem;
+}
+
+.hero .title {
     font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
     margin-bottom: 1rem;
 }
 
+.text-blue {
+    color: #3b82f6;
+}
+
+/* 内容区域 */
+.content {
+    font-size: 1.2rem;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    line-height: 1.8;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+/* 团队区域 */
 .team {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-size: 1.8em;
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 3rem;
+}
+
+/* 团队成员网格 */
+#team-members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .team-member {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
     text-align: center;
-    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background: white;
+}
+
+.team-member:hover::before {
+    transform: scaleX(1);
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
-    /* border-radius: 50%; */
-    margin-bottom: 1rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 3px solid #e2e8f0;
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.team-member:hover img {
+    border-color: #3b82f6;
+    transform: scale(1.05);
 }
 
 .team-member h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
     margin-bottom: 0.5rem;
 }
 
-.fab {
-    color: rgb(0, 96, 192)
+.team-member p {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
-.icon-blue {
-    color: rgb(0, 96, 192)
+/* 社交图标 */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 }
 
-.icon-white {
-    color: white
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
 }
 
-/* 标题样式 */
-.title {
-    font-size: 2rem;
-    position: relative;
-    z-index: 1;
+.social-icons a:hover {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    transform: translateY(-2px);
 }
 
-/* 偷偷告诉你格式 */
+.social-icons a:hover .fab,
+.social-icons a:hover .material-icons-outlined {
+    color: white;
+}
+
+.fab, .material-icons-outlined {
+    color: #64748b;
+    transition: color 0.3s ease;
+}
+
+/* 分页按钮 */
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#pagination button {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+}
+
+#pagination button:hover:not(:disabled) {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+#pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f8fafc;
+}
+
+/* 特殊样式 */
 .secret {
-    font-size: 0.2em;
+    font-size: 0.8em;
+    color: #94a3b8;
+    font-style: italic;
     text-decoration: line-through;
 }
 
 .notUseAnymore {
     font-size: 1em;
     color: #000;
-    background-color: #000; /* 高亮背景色 */
-    padding: 2px; /* 可选，增加内边距 */
+    background-color: #000;
+    padding: 2px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero:first-child {
+        margin-top: 1rem;
+    }
+    
+    .hero .title {
+        font-size: 2rem;
+    }
+    
+    .content {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .team {
+        padding: 2rem 1rem;
+    }
+    
+    #team-members-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .team-member {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 65px;
+    }
+    
+    .hero .title {
+        font-size: 1.75rem;
+    }
+    
+    .team h2 {
+        font-size: 1.875rem;
+    }
 }

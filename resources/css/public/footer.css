@@ -1,4 +1,4 @@
-/* 基本重置 */
+/* 重置样式 */
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +16,13 @@ footer {
     text-align: center;
     padding: 0.4rem 0;
     width: 100%;
-    bottom: 0;
+    margin-top: auto;
     font-size: 14px;
 }
 
 .fixed {
     position: fixed;
+    bottom: 0;  /* 添加底部定位 */
+    left: 0;    /* 添加左侧定位 */
+    z-index: 999; /* 确保footer在其他元素之上 */
 }

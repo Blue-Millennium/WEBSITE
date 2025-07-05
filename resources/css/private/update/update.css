@@ -1,17 +1,63 @@
 body {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-header {
-    height: 50px; /* 根据实际情况调整 */
-    background-color: rgba(255, 255, 255, 0.5);
+
+.update-log-container {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.update-log-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.update-log {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .update-log-container {
+        padding: 20px 15px;
+    }
+    
+    .update-log-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .update-log {
+        padding: 20px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .update-log-container h1 {
+        font-size: 1.6rem;
+    }
+    
+    .update-log {
+        padding: 15px;
+    }
 }
