@@ -22,7 +22,7 @@ footer {
 
 .fixed {
     position: fixed;
-    bottom: 0;  /* 添加底部定位 */
-    left: 0;    /* 添加左侧定位 */
+    bottom: 0; /* 添加底部定位 */
+    left: 0; /* 添加左侧定位 */
     z-index: 999; /* 确保footer在其他元素之上 */
 }

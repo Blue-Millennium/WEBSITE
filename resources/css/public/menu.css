@@ -152,7 +152,7 @@ header[data-bg-color="clear"] .hamburger span {
     body {
         padding-top: 60px;
     }
-    
+
     .hamburger {
         display: flex;
     }
@@ -203,7 +203,7 @@ header[data-bg-color="clear"] .hamburger span {
         border-radius: 0;
         text-shadow: none !important;
     }
-    
+
     header nav ul li a:hover {
         background: rgba(59, 130, 246, 0.08) !important;
         color: #3b82f6 !important;
@@ -221,7 +221,7 @@ header[data-bg-color="clear"] .hamburger span {
 /* 汉堡菜单动画 */
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
-    background: #3b82f6;  /* 这里是蓝色 */
+    background: #3b82f6; /* 这里是蓝色 */
 }
 
 .hamburger.active span:nth-child(2) {
@@ -231,7 +231,7 @@ header[data-bg-color="clear"] .hamburger span {
 
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
-    background: #3b82f6;  /* 这里也是蓝色 */
+    background: #3b82f6; /* 这里也是蓝色 */
 }
 
 /* 菜单滑动动画 */
@@ -251,7 +251,7 @@ header[data-bg-color="clear"] .hamburger span {
     header nav ul li {
         margin: 0 0.5rem;
     }
-    
+
     header nav ul li a {
         font-size: 14px;
         padding: 6px 12px;
@@ -263,7 +263,7 @@ header[data-bg-color="clear"] .hamburger span {
     header nav ul li {
         margin: 0 1.5rem;
     }
-    
+
     header nav ul li a {
         font-size: 16px;
         padding: 10px 20px;

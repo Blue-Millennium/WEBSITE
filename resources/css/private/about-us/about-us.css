@@ -245,37 +245,37 @@ main {
     body {
         padding-top: 70px;
     }
-    
+
     main {
         padding: 1rem;
     }
-    
+
     .hero {
         padding: 2rem 1rem;
     }
-    
+
     .hero:first-child {
         margin-top: 1rem;
     }
-    
+
     .hero .title {
         font-size: 2rem;
     }
-    
+
     .content {
         padding: 1.5rem;
         font-size: 1.1rem;
     }
-    
+
     .team {
         padding: 2rem 1rem;
     }
-    
+
     #team-members-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .team-member {
         padding: 1.5rem;
     }
@@ -285,11 +285,11 @@ main {
     body {
         padding-top: 65px;
     }
-    
+
     .hero .title {
         font-size: 1.75rem;
     }
-    
+
     .team h2 {
         font-size: 1.875rem;
     }

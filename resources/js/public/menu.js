@@ -9,15 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.querySelector('.hamburger');
             menuList.innerHTML = '';
             menuItems.forEach(item => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.textContent = item.text;
-                a.href = item.href;
-                if (item.target) {
-                    a.target = item.target;
+                if (!(item.disabled === "true")) {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.textContent = item.text;
+                    a.href = item.href;
+                    if (item.target) {
+                        a.target = item.target;
+                    }
+                    li.appendChild(a);
+                    menuList.appendChild(li);
                 }
-                li.appendChild(a);
-                menuList.appendChild(li);
             });
 
             // 添加汉堡菜单点击事件监听器
@@ -100,20 +102,5 @@ document.addEventListener('click', function (e) {
     if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
         hamburger.classList.remove('active');
         menu.classList.remove('active');
-    }
-});
-
-// 在现有代码的最后添加滚动检测
-document.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    const bgColor = header.getAttribute('data-bg-color');
-    
-    // 只对透明背景的页面（如首页）添加滚动效果
-    if (bgColor === 'clear') {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
     }
 });

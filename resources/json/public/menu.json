@@ -18,7 +18,8 @@
     },
     {
         "text": "模组服轨交线路图",
-        "href": "map-2.html"
+        "href": "map-2.html",
+        "disabled": "true"
     },
     {
         "text": "加入我们",

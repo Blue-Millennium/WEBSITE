@@ -37,10 +37,9 @@
     background: linear-gradient(145deg, #ffffff, #f0f2f5);
     border: 1px solid #e9ecef;
     border-left: 4px solid #007BFF;
-    box-shadow: 
-        0 10px 30px rgba(0, 0, 0, 0.1),
-        0 1px 8px rgba(0, 0, 0, 0.06),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1),
+    0 1px 8px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 15px;
@@ -54,15 +53,10 @@
 
 /* 3D悬停效果 */
 .log-entry:hover {
-    transform: 
-        translateY(-15px) 
-        rotateX(5deg) 
-        rotateY(-2deg) 
-        scale(1.03);
-    box-shadow: 
-        0 25px 50px rgba(0, 123, 255, 0.2),
-        0 10px 25px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    transform: translateY(-15px) rotateX(5deg) rotateY(-2deg) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 123, 255, 0.2),
+    0 10px 25px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
     border-left-color: #0056b3;
     border-left-width: 6px;
     background: linear-gradient(145deg, #ffffff, #f8f9fa);
@@ -77,12 +71,12 @@
     width: 200%;
     height: 200%;
     background: linear-gradient(
-        45deg, 
-        transparent, 
-        rgba(0, 123, 255, 0.15), 
-        rgba(255, 255, 255, 0.3),
-        rgba(0, 123, 255, 0.15),
-        transparent
+            45deg,
+            transparent,
+            rgba(0, 123, 255, 0.15),
+            rgba(255, 255, 255, 0.3),
+            rgba(0, 123, 255, 0.15),
+            transparent
     );
     transform: rotate(45deg) translateX(-100%) translateZ(10px);
     transition: transform 0.8s ease;
@@ -129,9 +123,8 @@
 
 .log-entry:hover h2 {
     transform: translateZ(10px);
-    text-shadow: 
-        0 2px 4px rgba(0, 0, 0, 0.2),
-        0 0 10px rgba(0, 123, 255, 0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(0, 123, 255, 0.3);
     color: #0056b3;
 }
 
@@ -206,9 +199,8 @@ li {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    box-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
     transform-style: preserve-3d;
 }
 
@@ -217,9 +209,8 @@ li {
     background: linear-gradient(145deg, #e3f2fd, #bbdefb);
     border-color: #007BFF;
     color: #0056b3;
-    box-shadow: 
-        0 8px 16px rgba(0, 123, 255, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -230,19 +221,19 @@ li {
         margin-bottom: 20px;
         border-radius: 12px;
     }
-    
+
     .log-entry:hover {
         transform: translateY(-8px) rotateX(3deg) scale(1.02);
     }
-    
+
     .update-log h2 {
         font-size: 1.2rem;
     }
-    
+
     li {
         padding-left: 25px;
     }
-    
+
     li:hover {
         transform: translateX(6px) translateZ(3px);
     }
@@ -253,15 +244,15 @@ li {
         padding: 15px;
         margin-bottom: 15px;
     }
-    
+
     .log-entry:hover {
         transform: translateY(-5px) scale(1.01);
     }
-    
+
     .update-log h2 {
         font-size: 1.1rem;
     }
-    
+
     li {
         padding-left: 20px;
     }

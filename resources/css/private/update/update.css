@@ -40,12 +40,12 @@ body {
     .update-log-container {
         padding: 20px 15px;
     }
-    
+
     .update-log-container h1 {
         font-size: 1.8rem;
         margin-bottom: 30px;
     }
-    
+
     .update-log {
         padding: 20px;
         border-radius: 12px;
@@ -56,7 +56,7 @@ body {
     .update-log-container h1 {
         font-size: 1.6rem;
     }
-    
+
     .update-log {
         padding: 15px;
     }
