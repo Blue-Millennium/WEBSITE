@@ -19,6 +19,13 @@
     },
     {
         "type": "a",
+        "text": "Luminol MC",
+        "href": "https://luminolsuki.moe/",
+        "target": "_blank",
+        "className": "text-blue"
+    },
+    {
+        "type": "a",
         "text": "联系我们",
         "href": "mailto:suisuroru@blue-millennium.fun",
         "className": "text-blue"
