@@ -19,7 +19,13 @@ fetch(basePath + 'index.json')
     .then(dataArray => {
         const logContainer = document.getElementById('update-log');
 
-        dataArray.forEach((entry, index) => {
+        // 倒序加载
+        const reversedEntries = dataArray
+            .filter(entry => !!entry)
+            .reverse();
+
+
+        reversedEntries.forEach((entry, index) => {
             if (!entry) return;
 
             const entryDiv = document.createElement('div');
