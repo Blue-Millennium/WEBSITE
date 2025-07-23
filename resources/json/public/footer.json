@@ -26,6 +26,12 @@
     },
     {
         "type": "a",
+        "text": "赞助我们",
+        "href": "https://ifdian.net/a/bm0721",
+        "className": "text-blue"
+    },
+    {
+        "type": "a",
         "text": "联系我们",
         "href": "mailto:suisuroru@blue-millennium.fun",
         "className": "text-blue"
