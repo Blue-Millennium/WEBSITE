@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
             footer.innerHTML = '';
 
             footerItems.forEach((item, index) => {
+                if (item.disabled === 'true') {
+                    return;
+                }
+
                 if (item.type === 'p') {
                     const p = document.createElement('p');
                     p.textContent = item.text;
