@@ -23,12 +23,14 @@
     },
     {
         "text": "加入我们",
-        "href": "https://qm.qq.com/cgi-bin/qm/qr?k=9_vS8M00KoSDvj8uVRQAYbZGFrIi_mdR&jump_from=webapi&authKey=EjtyVtpRe2zZQoxU0lJKK9BAFlb2sUNr2HfTjcm+OGDY/QSnpyiCQ9Eoan2acL7t",
+        "href": "https://qm.qq.com/cgi-bin/qm/qr?k=rkli1hgKtWJR-K6ndfKqv0e1XLQ_AGZP&jump_from=webapi&authKey=OJA4fyrJCBLMcHbSiGUmsXD2keiTyngABSjVwBep6DTtzbYgV4Xnu7BmmqFZAKrr",
+        "title": "加入QQ群",
         "target": "_blank"
     },
     {
         "text": "赞助我们",
         "href": "https://afdian.com/a/bm0721",
+        "title": "前往爱发电",
         "target": "_blank"
     }
 ]

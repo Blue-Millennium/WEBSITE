@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (item.target) {
                         a.target = item.target;
                     }
+                    if (item.alt) {
+                        a.alt = item.alt;
+                    }
+                    if (item.title) {
+                        a.title = item.title;
+                    }
                     li.appendChild(a);
                     menuList.appendChild(li);
                 }
