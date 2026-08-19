@@ -12,14 +12,6 @@
     },
     {
         "type": "a",
-        "text": "Tunite 官网",
-        "href": "https://tunite.cn",
-        "target": "_blank",
-        "className": "text-blue",
-        "disabled": "true"
-    },
-    {
-        "type": "a",
         "text": "Luminol MC",
         "href": "https://luminolsuki.moe/",
         "target": "_blank",
