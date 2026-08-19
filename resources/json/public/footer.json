@@ -21,6 +21,7 @@
         "type": "a",
         "text": "赞助我们",
         "href": "https://ifdian.net/a/bm0721",
+        "target": "_blank",
         "className": "text-blue"
     },
     {
